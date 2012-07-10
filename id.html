@@ -44,7 +44,8 @@ function start(){
     } else {
         cid = id.split(":");
     }
-    window.location = "steam://friends/add/" + cid;
+    var fcid = cid[1] * 2 + 76561197960265728 + cid[2]
+    window.location = "steam://friends/add/" + fcid;
 }
 </script>
 
