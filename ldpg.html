@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Fusion RP - MOTD</title>
+<script type="text/javascript">
+var rand = Math.round((Math.random()*3)+1)
+document.write("<object height=\"1px\" width=\"1px\" data=\""+rand+".mp3\"><\/object>");
+
+function get_random_color() {
+var letters = '0123456789ABCDEF'.split('');
+var color = '#';
+for (var i = 0; i < 6; i++ ) {
+  color += letters[Math.round(Math.random() * 15)];
+}
+return color;
+}
+
+function change()
+{
+document.getElementById("first").style.borderColor = get_random_color();
+setTimeout("change()", 1000);
+}
+
+function timer(){
+document.body.style.opacity = 1;
+change();
+}
+
+function startup(){
+	setTimeout(timer,1000);
+}
+</script>
+<style type="text/css">
+body{
+color:#FFFFFF;
+background-image:url(bg.jpg);
+}
+div.hl{
+	-webkit-transition: all 0.5s linear;
+}
+div.hl:hover{
+	color: #0F0;
+}
+.bclass {
+text-shadow: 5px 5px 5px #FF0000;
+color:#FFFFFF;
+}
+.tank {
+text-align:left;
+padding:10px;
+}
+.table {
+border-radius:10px 10px 10px 10px;
+-webkit-transition: all 0.1s linear;
+}
+</style>
+</head>
+<body bgcolor="#000000" onload="startup()">
+<center>
+<img src="./FL_Chan_Dance.gif"/>
+<table width="500" id="first" class="table" border="10" cellspacing="0" cellpadding="0">
+<tr>
+  <td class="bclass"><center><h1>Welcome To Fusion RP</h1></center></td>
+</tr>
+<tr>
+<td class="tank">
+  <div class="hl">1. Please listen to the server admins or you will die.</div>
+  <div class="hl">2. Woop</div>
+  <div class="hl">3. Yea</div>
+  <div class="hl">4. You are inclined</div>
+  <div class="hl">5. To make me rise an hour early</div>
+  <div class="hl">6. Just like daylight savings time...</div>
+  <div class="hl">7. You and me, baby be, nothing but mammals so lets</div>
+  <div class="hl">8. Do it like they do on the discovery channel!</div>
+  <!--Rules Go Here, as simple as that. put <br> ...for page break. -->
+</td>
+</tr>
+</table>
+</center>
+<div style="float:left;position:absolute;bottom:0px;color:#333";>Copyright © 2012 | Made by HeLLFox15</div>
+</body>
+</html>
